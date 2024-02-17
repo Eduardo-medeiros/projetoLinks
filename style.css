@@ -31,6 +31,7 @@ body {
   background-size: cover;
   /*pode agrupar o background em uma unica propriedade e a sequencia é background:color image repeat position/size
   */
+  height: 100vh;
 }
 
 body * {
@@ -154,4 +155,13 @@ ul li a:hover {
 #socialLInks a:hover {
   background: var(--highlight-color);
   border-radius: 50%;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
